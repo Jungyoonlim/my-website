@@ -19,11 +19,6 @@
             text-align: center;
             padding: 1rem;
         }
-
-        main {
-            padding: 2rem;
-        }
-
         h1, h2 {
             margin-bottom: 0.5rem;
         }
@@ -31,27 +26,23 @@
         p {
             margin-bottom: 1rem;
         }
-</style>
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    img {
-        margin: 10px; /* Adds some space around images */
-    }
-</style>
-<main>
-    <img src="chandelier.jpg" width="400" height="300"> 
-    <img src="met.jpg" width="400" height="300">
-    <img src="pond_print.jpg" width="400" height="300">
-    <img src="pond.jpg" width="400" height="300">
-    <img src="duck.jpg" width="400" height="300">
-    <img src="lamp.jpg" width="300" height="400">
-    <img src="glass.jpg" width="300" height="400">
-    <img src="lilies.jpg" width="300" height="400">
-    <img src="cherry.jpg" width="400" height="300">
-</main>
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 10px; /* Adds some space around images */
+        }
+    </style>
+    <main>
+        <img src="chandelier.jpg" width="400" height="300"> 
+        <img src="met.jpg" width="400" height="300">
+        <img src="pond_print.jpg" width="400" height="300">
+        <img src="pond.jpg" width="400" height="300">
+        <img src="duck.jpg" width="400" height="300">
+        <img src="lamp.jpg" width="300" height="400">
+        <img src="glass.jpg" width="300" height="400">
+        <img src="lilies.jpg" width="300" height="400">
+        <img src="cherry.jpg" width="400" height="300">
+    </main>
         
 
 
