@@ -1,8 +1,10 @@
 [
   {
-    "title": "Forgiving Us"
+    "title": "Forgiving Us",
+    "script": "<script src=\"main.js\"></script>"
   },
   {
-    "title": "Giving Thanks"
+    "title": "Giving Thanks",
+    "script": "<script src=\"main.js\"></script>"
   }
 ]
