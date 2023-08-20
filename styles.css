@@ -1,21 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fdf6e3;
+    color: #002b36;
+    transition: all 0.5s ease;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #268bd2;
+    color: #fdf6e3;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 }
 
 #content {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
+    margin: 40px;
+    padding: 40px;
+    background-color: #fdf6e3;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 }
 
 #workList, #linkList {
@@ -24,24 +29,27 @@ header {
 }
 
 #workList li, #linkList li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
 }
 
 a {
-    color: #333;
+    color: #268bd2;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 a:hover {
-    color: #555;
+    color: #2aa198;
 }
 
 body.darkmode {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  @keyframes fade-in {
+    background-color: #002b36;
+    color: #fdf6e3;
+    transition: all 0.5s ease;
+}
+
+@keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
-  }
+}
