@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#workList, #linkList {
+    list-style: none;
+    padding: 0;
+}
+
+#workList li, #linkList li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+}
+
+body.darkmode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
