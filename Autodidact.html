@@ -8,7 +8,7 @@
     <meta property="og:description" content="Jungyoon Lim, Joanne Lim">
     <meta name="twitter:card" content="summary_large_image">
     <style>
-      body {
+       body {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -17,30 +17,37 @@
           margin: 0;
           padding: 0;
       }
-
-      main {
-          text-align: center;
+  
+      header h1, main p, main h2 {
+          text-align: center;  
       }
-
-      ul#linkList {
+  
+      ul {
           list-style-type: none;
           padding: 0;
           margin: 0;
+          text-align: left;  
       }
-
-      ul#linkList li {
+  
+      ul li {
           margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+      }
+  
+      ul li a {
+          text-align: center;
       }
   </style>
   </head>
   <body>
     <header>
-      <h3>Learning</a></h3>
+      <h3>Learning</h3>
     </header>
     <main>
       <p>I aggregated links to courses I am learning from && will learn from in the future. Learning is truly fun, and it surely seems possible to do it for free!</p>
       <h4>Math</h4>
-      <ul id="linkList">
+      <ul>
         <li><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61O7HkcF7UImpM0cR_L2gSw">Real Analysis</a></li>
         <li><a href="https://www.youtube.com/playlist?list=PLTBqohhFNBE_09L0i-lf3fYXF5woAbrzJ">Topology and Geometry</a></li>
         <li><a href="https://www.youtube.com/playlist?list=PL71JUoXcec_mmLm9psjMKo1FYBXS9WHb7">Complex Analysis</a></li>
