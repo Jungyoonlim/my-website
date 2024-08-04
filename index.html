@@ -1,62 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Jungyoon Lim</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jungyoon Lim — Designer and Programmer</title>
     <meta name="description" content="Jungyoon Lim's work">
-    <meta property="og:title" content="Jungyoon Lim">
-    <meta property="og:description" content="Jungyoon Lim, Joanne Lim">
-    <meta name="twitter:card" content="summary_large_image">
     <style>
-      body {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          height: 100vh;
-          margin: 0;
-          padding: 0;
-      }
-  
-      header h1, main p, main h2 {
-          text-align: center;  
-      }
-  
-      ul {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-          text-align: left;  
-      }
-  
-      ul li {
-          margin-bottom: 10px;
-          display: flex;
-          justify-content: center;
-      }
-  
-      ul li a {
-          text-align: center;
-      }
-    </style>  
-  </head>
-  <body>
-    <header>
-      <h1>Jungyoon Lim, Joanne</h1>
-    </header>
-    <main>
-        <ul>
-          <p>Designer and Programmer</p>
-          <p>Working on AI interface. At the intersection of design, human-computer interface, and AI.</p>
-          <li><a href="https://jungyoonlim.notion.site/Jungyoon-Lim-Joanne-9dea685b876c4562b8d479849add8126?pvs=4">Portfolio</a></li>
-          <li><a href="essays.html">Essays</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="https://github.com/Jungyoonlim">GitHub</a></li>
-          <li><a href="art.html">Artwork</a></li>
-        </ul>
-        <!--<li><a href="Autodidact.html">Learn</a></li> -->
+        @font-face {
+            font-family: 'PPNeueMontreal';
+            src: url('font/PPNeueMontreal-Thin.otf') format('opentype');
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'PPNeueMontreal';
+            src: url('font/PPNeueMontreal-Book.otf') format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'PPNeueMontreal';
+            src: url('font/PPNeueMontreal-Italic.otf') format('opentype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'PPNeueMontreal';
+            src: url('font/PPNeueMontreal-Medium.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'PPNeueMontreal';
+            src: url('font/PPNeueMontreal-SemiBolditalic.otf') format('opentype');
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'PPNeueMontreal';
+            src: url('font/PPNeueMontreal-Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
         
-      <p>You can contact me via <a href="https://twitter.com/jungyoonlim">Twitter</a> or <a href="https://www.linkedin.com/in/jungyoonlim/">LinkedIn</a>.</p>
+        :root {
+            --foreground: 0, 0, 0;
+            --background: 255, 255, 255;
+            --accent: 0, 0, 255;
+        }
+        
+        body {
+            font-family: 'PPNeueMontreal', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            color: rgb(var(--foreground));
+            background-color: rgb(var(--background));
+            max-width: 460px;
+            margin: 0 auto;
+            padding: 64px 32px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-bottom: 0.25rem;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            color: rgba(var(--foreground), 0.8);
+            margin-bottom: 2.5rem;
+        }
+        
+        .section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+        }
+        
+        .section-title {
+            flex: 0 0 80px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            opacity: 0.66;
+            line-height: 1.5;
+            position: relative;
+            padding-right: 10px;
+        }
+
+        .section-title::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 1px;
+            background-color: rgba(var(--foreground), 0.1); /* Subtle line color */
+        }
+        
+        .section-content {
+            flex: 1;
+            padding-left: 20px; /* Add padding to create space between line and content */
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            color: rgb(var(--accent));
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p, li {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jungyoon Lim</h1>
+        <p class="subtitle">Design Engineer</p>
+    </header>
+    
+    <main>
+        <div class="section">
+            <div class="section-title">About</div>
+            <div class="section-content">
+                <p>Currently working at the intersection of design, human-computer interface, and AI.</p> <br>
+                <p>Previously done unrelated things like:</p>
+                <ul>
+                    <li>- Applied Math and Philosophy at Brown University</li>
+                    <li>- Ancient Greek (χαιρε!) and Latin</li>
+                    <li>- Fine Art (<a href="https://limjungyoon.com/art">https://limjungyoon.com/art</a>)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Links</div>
+            <div class="section-content">
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Essays</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Artwork</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Contact</div>
+            <div class="section-content">
+                <p>You can reach me via <a href="https://twitter.com/jungyoonlim">Twitter</a> or <a href="https://www.linkedin.com/in/jungyoonlim/">LinkedIn</a>.</p>
+            </div>
+        </div>
     </main>
-  </body>
+</body>
 </html>
