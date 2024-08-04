@@ -4,43 +4,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing</title>
     <style>
+        @font-face {
+            font-family: 'PPNeueMontreal';
+            src: url('font/PPNeueMontreal-Book.otf') format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
         body {
+            font-family: 'PPNeueMontreal', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
-            padding: 0;
+            padding: 64px 32px;
         }
-  
+
         main {
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+        }
+
+        h3, p {
             text-align: center;
         }
-  
-        ul#linkList {
+
+        ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            margin-top: 20px;
         }
   
-        ul#linkList li {
+        ul li {
             margin-bottom: 10px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
-        <list>
-            <h3>Writing</h3>
-            <p>I write on <a href="https://jungyoonlim.substack.com/">Ode to Minerva</a> primarily.</p>
-            <p>I previously wrote on <a href="https://medium.com/@jungyoonlim">Medium</a>.</p>
-            <p>Sample essays</p>
-            <ul>
-                <li><a href="essays/farewellbrown.html">Farewell Brown</li>
-                <li><a href="essays/forgivingus.html">Forgiving Us</a></li>
-                <li><a href="essays/givingthanks.html">Giving Thanks</a></li>
-            </ul>
-        </list>
+    <main>
+        <h3>Writing</h3>
+        <li><a href="https://jungyoonlim.substack.com/">Ode to Minerva</a></li>
+        <li><a href="https://medium.com/@jungyoonlim">Medium</a></li>
+            <li><a href="essays/farewellbrown.html">Farewell Brown</a></li>
+            <li><a href="essays/forgivingus.html">Forgiving Us</a></li>
+            <li><a href="essays/givingthanks.html">Giving Thanks</a></li>
+        </ul>
+    </main>
 </body>
 </html>
-
