@@ -12,6 +12,11 @@
             --background: 255, 255, 255;
             --accent: 0, 0, 255;
         }
+
+        .container {
+            display: grid;
+            padding-left: 50px;
+        }
         
         body {
             font-family: "droid-sans-mono", monospace;
@@ -27,7 +32,7 @@
         
         .subtitle {
             font-size: 1rem;
-            color: rgba(var(--foreground), 0.8);
+            color: grey; 
             margin-bottom: 2.5rem;
         }
         
@@ -69,12 +74,12 @@
         }
         
         a {
-            color: rgb(var(--accent));
+            color: grey; 
             text-decoration: none;
         }
         
         a:hover {
-            text-decoration: underline;
+            background-color: grey;
         }
 
         p, li {
@@ -82,60 +87,62 @@
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Jungyoon Lim</h1>
-        <p class="subtitle">Design Engineer</p>
-    </header>
-    
-    <main>
-        <div class="section">
-            <div class="section-title">About</div>
-            <div class="section-content">
-                <p>Currently working at the intersection of design, human-computer interface, and AI.</p> <br>
-                <p>Previously done unrelated things like:</p>
-                <ul>
-                    <li>- Applied Math and Philosophy at Brown University</li>
-                    <li>- Ancient Greek (χαιρε!) and Latin</li>
-                    <li>- Fine Art</li>
-                </ul>
-            </div>
-        </div>
+<div class="container">
+    <body>
+        <header>
+            <h1>Jungyoon Lim</h1>
+            <p class="subtitle">Design Engineer</p>
+        </header>
         
-        <div class="section">
-            <div class="section-title">Links</div>
-            <div class="section-content">
-                <ul>
-                    <!--<li><a href="">Portfolio</a></li>-->
-                    <li><a href="https://read.cv/jungyoonlim">CV</a></li>
-                    <li><a href="https://github.com/Jungyoonlim">GitHub</a></li>
-                    <li><a href="https://jungyoonlim-fineart.vercel.app">Artwork</a></li>
-                    <li><a href="essays.html">Essays</a></li>
-                    <li><a href="books.html">Books</a></li>
-                </ul>
+        <main>
+            <div class="section">
+                <div class="section-title">About</div>
+                <div class="section-content">
+                    <p>Design Engineer with interests in Art & Design,</p> 
+                    <p>HCI, beauty, Math, and Ancient Philosophy</p>
+                </div>
             </div>
-        </div>
+            
+            <div class="section">
 
-        <!-- TODO: Add projects 
-            <div class="projects">
-            <div class="section-title">Links</div>
-            <div class="section-content">
-                <ul>-->
-                    <!--<li><a href="">Portfolio</a></li>-->
-                    <!--<li><a href="https://www.cosmos.so/jungyoonlim">Cosmos</a></li>
-                    <li><a href="https://github.com/Jungyoonlim">GitHub</a></li>
-                    <li><a href="art.html">Artwork</a></li>
-                </ul>
+
             </div>
-        </div>
-        -->
-        
-        <div class="section">
-            <div class="section-title">Contact</div>
-            <div class="section-content">
-                <p>You can reach me via <a href="https://twitter.com/jungyoonlim">Twitter</a> or <a href="https://www.linkedin.com/in/jungyoonlim/">LinkedIn</a>.</p>
+
+            <div class="section">
+                <div class="section-title">Links</div>
+                <div class="section-content">
+                    <ul>
+                        <!--<li><a href="">Portfolio</a></li>-->
+                        <li><a href="https://read.cv/jungyoonlim">CV</a></li>
+                        <li><a href="https://github.com/Jungyoonlim">GitHub</a></li>
+                        <li><a href="https://jungyoonlim-fineart.vercel.app">Artwork</a></li>
+                        <li><a href="essays.html">Essays</a></li>
+                        <li><a href="books.html">Books</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </main>
-</body>
+    
+            <!-- TODO: Add projects 
+                <div class="projects">
+                <div class="section-title">Links</div>
+                <div class="section-content">
+                    <ul>-->
+                        <!--<li><a href="">Portfolio</a></li>-->
+                        <!--<li><a href="https://www.cosmos.so/jungyoonlim">Cosmos</a></li>
+                        <li><a href="https://github.com/Jungyoonlim">GitHub</a></li>
+                        <li><a href="art.html">Artwork</a></li>
+                    </ul>
+                </div>
+            </div>
+            -->
+            
+            <div class="section">
+                <div class="section-title">Contact</div>
+                <div class="section-content">
+                    <p>You can reach me via <a href="https://twitter.com/jungyoonlim">Twitter</a> or <a href="https://www.linkedin.com/in/jungyoonlim/">LinkedIn</a>.</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</div>
 </html>
